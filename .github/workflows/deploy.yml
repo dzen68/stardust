@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ 'https://github.com/dzen68/stardust/settings/pages' }}
     steps:
       - uses: actions/checkout@v4
 
