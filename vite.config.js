@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/stardust/',
+  base: '/https://github.com/dzen68/stardust.git',
 })
