@@ -5,7 +5,7 @@ const appContainer = document.querySelector('#app');
 const dateInput = document.querySelector('#datepicker');
 
 async function getAstronomyData(date) {
-    appContainer.innerHTML = '<p>Loading universe...</p>';
+    appContainer.innerHTML = '<p>Loading universe..........</p>';
 
     try {
 
