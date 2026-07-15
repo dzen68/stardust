@@ -6,9 +6,44 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "node server.js",
+    "dev:all": "concurrently \"npm run server\" \"npm run dev\""
   },
   "devDependencies": {
+    "concurrently": "^10.0.3",
     "vite": "^8.1.1"
-  }
+  },
+  "description": "Stardust is a sleek, responsive, space-themed web application that connects directly to the NASA API to fetch and display the **Astronomy Picture of the Day (APOD)**. Built using modern frontend workflows, it allows users to explore breathtaking snapshots of our universe across different dates.",
+  "main": "vite.config.js",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "detect-libc": "^2.1.2",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "fdir": "^6.5.0",
+    "jsonwebtoken": "^9.0.3",
+    "lightningcss": "^1.32.0",
+    "lightningcss-win32-x64-msvc": "^1.32.0",
+    "mongoose": "^9.7.4",
+    "nanoid": "^3.3.15",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.4",
+    "postcss": "^8.5.16",
+    "rolldown": "^1.1.4",
+    "source-map-js": "^1.2.1",
+    "tinyglobby": "^0.2.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzen68/stardust.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dzen68/stardust/issues"
+  },
+  "homepage": "https://github.com/dzen68/stardust#readme"
 }
