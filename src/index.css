@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Stardust — React Frontend (Brutalist / SpaceX / Leica Aesthetic)
+   ========================================================================== */
+
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+   :root {
+     /* Colors */
+     --bg-main: #0a0a0b;
+     --bg-surface: #121214;
+     
+     --text-hi: #f4f4f5;
+     --text-muted: #71717a;
+     --text-dark: #3f3f46;
+     
+     --accent: #ff4500; /* Solar Flare Orange */
+     --accent-hover: #e03c00;
+     
+     --border: #27272a;
+     --border-light: #3f3f46;
+   
+     /* Typography */
+     --font-display: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+     --font-mono: 'IBM Plex Mono', monospace;
+   }
+   
+   /* Reset */
+   *, *::before, *::after {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+   }
+   
+   html, body {
+     height: 100%;
+     background-color: var(--bg-main);
+     color: var(--text-hi);
+     font-family: var(--font-body);
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+   }
+   
+   /* Custom Scrollbar */
+   ::-webkit-scrollbar {
+     width: 8px;
+     height: 8px;
+   }
+   ::-webkit-scrollbar-track {
+     background: var(--bg-main);
+     border-left: 1px solid var(--border);
+   }
+   ::-webkit-scrollbar-thumb {
+     background: var(--text-dark);
+     border-radius: 0px; /* Brutalist */
+   }
+   ::-webkit-scrollbar-thumb:hover {
+     background: var(--accent);
+   }
+   
+   /* Form Elements Reset */
+   input, button {
+     font-family: inherit;
+     border-radius: 0;
+     appearance: none;
+     outline: none;
+   }
+   
+   a {
+     color: inherit;
+     text-decoration: none;
+   }
+   
+   /* Layout Utilities */
+   #root {
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+   }
+   
+   /* Animations */
+   @keyframes fadeIn {
+     from { opacity: 0; transform: translateY(5px); }
+     to { opacity: 1; transform: translateY(0); }
+   }
+   
+   .animate-fade-in {
+     animation: fadeIn 0.4s ease-out forwards;
+   }
